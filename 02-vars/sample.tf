@@ -50,6 +50,13 @@ output "ex-map" {
     value = "Welcome to batch ${var.ex-map["Batch"]} and the sessions timings are ${var.ex-map["Timing"]} and Terraform Expert name is ${var.ex-map["terraform"]}"
 }
 
+variable "city" {
+    default = "Bengaluru"
+}
+
+output "city" {
+    value = var.city
+}
 
 # A variable can be accessed without ${} only the variable is called. In case, if it's needed to be added with other strings or in between something, then we need to enclose them in
 # in the double quotes. Single quotes are not valid in terraform. 

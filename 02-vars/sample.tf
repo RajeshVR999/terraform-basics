@@ -20,11 +20,11 @@ output "number" {
 
 variable "ex-list" {
     default = [
-        "cloud"
-        "Devops"
-        100
-        false
-        "verma"
+        "cloud",
+        "Devops",
+        100,
+        false,
+        "verma",
         "SRE"
     ]
 }

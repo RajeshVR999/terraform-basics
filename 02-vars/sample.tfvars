@@ -1,2 +1,2 @@
-city = "Hyderbad"
-state = "AP"
+city = "Bengaluru"
+state = "Karnataka"

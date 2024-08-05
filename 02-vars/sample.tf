@@ -24,13 +24,13 @@ variable "ex-list" {
         "Devops",
         100,
         false,
-        "verma",
+        "Rajesh VR",
         "SRE"
     ]
 }
 
 output "ex-list-output" {
-    value = "welcome to ${var.ex-list[1]}"
+    value = "welcome to ${var.ex-list[0]} ${var.ex-list[1]}" The terraform duration is ${var.ex-list[2]} terform expert name is ${var.ex-list[4]}
 }
 
 

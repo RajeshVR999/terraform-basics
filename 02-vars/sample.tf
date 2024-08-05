@@ -30,7 +30,7 @@ variable "ex-list" {
 }
 
 output "ex-list-output" {
-    value = "welcome to ${var.ex-list[0]} ${var.ex-list[1]}" The terraform duration is ${var.ex-list[2]} terform expert name is ${var.ex-list[4]}
+    value = "welcome to ${var.ex-list[0]} ${var.ex-list[1]}" the terraform duration is ${var.ex-list[2]} terform expert name is ${var.ex-list[4]}"
 }
 
 

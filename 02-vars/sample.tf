@@ -30,7 +30,7 @@ variable "ex-list" {
 }
 
 output "ex-list-output" {
-    value = "welcome to $(var.ex-list[2])"
+    value = "welcome to ${var.ex-list[1]}"
 }
 
 

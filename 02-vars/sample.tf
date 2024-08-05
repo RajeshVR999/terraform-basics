@@ -47,7 +47,7 @@ variable "ex-map" {
 }
 
 output "ex-map" {
-    value = "Welcome to batch ${var.ex-map["Batch"]} and the sessions timings are ${var.ex-map["Timing"]} and Teraform Expert name is ${var.ex-map["terraform"]}"
+    value = "Welcome to batch ${var.ex-map["Batch"]} and the sessions timings are ${var.ex-map["Timing"]} and Terraform Expert name is ${var.ex-map["terraform"]}"
 }
 
 

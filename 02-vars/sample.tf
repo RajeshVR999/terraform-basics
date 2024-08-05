@@ -11,7 +11,7 @@ output "sample1" {
 }
 
 variable "number" {
-    default =  = 100
+    default = 100
 }
 
 output "number" {

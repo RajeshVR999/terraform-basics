@@ -29,6 +29,11 @@ variable "ex-list" {
     ]
 }
 
+output "ex-list-output" {
+    value = "welcome to $(var.ex-list[2])"
+}
+
+
 
 # A variable can be accessed without ${} only the variable is called. In case, if it's needed to be added with other strings or in between something, then we need to enclose them in
 # in the double quotes. Single quotes are not valid in terraform. 

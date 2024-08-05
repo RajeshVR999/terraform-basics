@@ -60,5 +60,11 @@ output "city" {
     value = var.city
 }
 
+variable "state" {}
+
+output "state" {
+    value = var.state
+}
+
 # A variable can be accessed without ${} only the variable is called. In case, if it's needed to be added with other strings or in between something, then we need to enclose them in
 # in the double quotes. Single quotes are not valid in terraform. 

@@ -1,2 +1,2 @@
 city = "Bengaluru"
-state = "Karnataka"
+state = "Karnataka State"

@@ -13,10 +13,9 @@ output "private_dns" {
   value = aws_instance.app.private_ip
 }
 
-# Show private ip outputs on the sscreen 
+# Show puclic ip outputs on the sscreen 
 output "Public" {
-  value = aws_instance.app.private_ip
-  value = aws_instance.app.Public
+  value = aws_instance.app.public_ip
 }
 
 # Creating secuirty group 

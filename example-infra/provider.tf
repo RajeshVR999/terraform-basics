@@ -1,6 +1,16 @@
 provider "aws" {
-  region = "ap-south-1"
+  region = "ap-southeast-1"
 }
+
+# [default]
+# aws_access_key_id = YOUR_ACCESS_KEY_ID
+# aws_secret_access_key = YOUR_SECRET_ACCESS_KEY
+
+//or
+
+# export AWS_ACCESS_KEY_ID=YOUR_ACCESS_KEY_ID
+# export AWS_SECRET_ACCESS_KEY=YOUR_SECRET_ACCESS_KEY
+
 
 
 # terraform {

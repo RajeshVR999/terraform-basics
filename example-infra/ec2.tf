@@ -8,5 +8,5 @@ resource "aws_instance" "app" {
 }
 
 output "private_dns" {
-  value = aws_instance.ec2-web.private_dns
+  value = aws_instance.app.private_ip
 }

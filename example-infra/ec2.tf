@@ -3,7 +3,7 @@ resource "aws_instance" "ec2-web" {
   instance_type = "t2.micro"
   
   tags = {
-    Name = "CERT-AWS_EC2"
+    Name = "CAE-CERT-AWS_EC2"
   }
 }
 

@@ -1,6 +1,6 @@
 # Creating Ec2 Instance
 resource "aws_instance" "app" {
-  ami                    = data.aws_ami.myami.id
+  ami                    = data.aws_ami.myami.image_id
   instance_type          = "t3.micro"
   vpc_security_group_ids = [var.sg]
   tags = {

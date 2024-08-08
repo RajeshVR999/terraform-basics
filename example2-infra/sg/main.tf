@@ -1,9 +1,6 @@
-
-
 # Creating secuirty group 
-
-resource "aws_security_group" "allow_ssh" {
-  name        = "allow_ssh"
+resource "aws_security_group" "allows_ssh" {
+  name        = "allows_ssh"
   description = "Allow TLS inbound traffic"
 
   ingress {
@@ -31,10 +28,10 @@ resource "aws_security_group" "allow_ssh" {
     }
 
   egress {
-    from_port = 0
-    to_port = 0
-    protocol = "-1"
-    cidr_blocks = ["0.0.0.0/0"]
+    from_port     = 0
+    to_port       = 0
+    protocol      = "-1"
+    cidr_blocks    = ["0.0.0.0/0"]
   }
 
   tags = {
@@ -42,6 +39,7 @@ resource "aws_security_group" "allow_ssh" {
   }
 }
 
+# Output 
 output "sgid" {
-  value = aws_security_group.allows_ssh.id
+    value  =  aws_security_group.allows_ssh.id
 }

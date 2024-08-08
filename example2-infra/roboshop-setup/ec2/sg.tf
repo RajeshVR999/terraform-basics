@@ -47,7 +47,3 @@ resource "aws_security_group" "allows_ssh" {
   }
 }
 
-# Output 
-output "sgid" {
-    value  =  aws_security_group.allows_ssh.id
-}

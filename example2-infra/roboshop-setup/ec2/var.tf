@@ -1,1 +1,1 @@
-variable "COMPONET" {}
+variable "COMPONENT" {}

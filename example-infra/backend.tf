@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
-    bucket = "krishya-tf-statefile"  # Ensure this bucket name is valid and exists
-    key    = "tf.tfstate"
+    bucket = "s3://krishya-tf-statefile/"  # Ensure this bucket name is valid and exists
+    key    = "sample"
     region = "ap-southeast-1"  # Specify the correct region for your S3 bucket
   }
 }

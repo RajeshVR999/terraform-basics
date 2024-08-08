@@ -8,6 +8,6 @@ module "s3" {
 
 # Taking the output to this root module from the sg sub-module
 
-output "name" {
-  
-}
+output "public_ip" {
+  value = aws_instance.app.public_ip
+  }

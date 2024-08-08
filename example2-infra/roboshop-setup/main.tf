@@ -12,57 +12,57 @@ terraform {
 
 module "frontend" {
     source = "./ec2"
-    COMPONET = "frontend"
+    COMPONENT = "frontend"
 }
 
 module "mongodb" {
     source = "./ec2"
-    COMPONET = "mongodb"
+    COMPONENT = "mongodb"
 }
 
 module "catalogue" {
     source = "./ec2"
-    COMPONET = "catalogue"
+    COMPONENT = "catalogue"
 }
 
 module "redis" {
     source = "./ec2"
-    COMPONET = "redis"
+    COMPONENT = "redis"
 }
 
 module "user" {
     source = "./ec2"
-    COMPONET = "user"
+    COMPONENT = "user"
 }
 
 module "cart" {
     source = "./ec2"
-    COMPONET = "cart"
+    COMPONENT = "cart"
 }
 
 module "mysql" {
     source = "./ec2"
-    COMPONET = "mysql"
+    COMPONENT = "mysql"
 }
 
 module "shipping" {
     source = "./ec2"
-    COMPONET = "shipping"
+    COMPONENT = "shipping"
 }
 
 module "rabnitmq" {
     source = "./ec2"
-    COMPONET = "rabbitmq"
+    COMPONENT = "rabbitmq"
 }
 
 module "payment" {
     source = "./ec2"
-    COMPONET = "payment"
+    COMPONENT = "payment"
 }
 
 module "dispatch" {
     source = "./ec2"
-    COMPONET = "dispatch"
+    COMPONENT = "dispatch"
 }
 
 

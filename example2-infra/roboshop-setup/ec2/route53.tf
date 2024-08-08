@@ -3,6 +3,7 @@ resource "aws_route53_record" "www" {
   name    = "${var.COMPONET}-dev.robot.internal"
   type    = "A"
   ttl     = 300
-  records = [aws_spot_instance_request.spot.lb.private_ip]
+  #records = [aws_spot_instance_request.spot.lb.private_ip]
+  records = [aws_spot_instance_request.spot.private_ip]
 }
 

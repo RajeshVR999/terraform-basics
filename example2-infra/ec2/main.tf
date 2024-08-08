@@ -13,7 +13,10 @@ resource "aws_instance" "app" {
 
   provisioner "remote-exec" {
     inline = [ 
-        "ansible-pull -U https://github.com/RajeshVR999/ansible.git -e ansible_user=ec2-user -e ansible_password=Devops@999 -e COMPONENT=mongodb roboshop.yml"
+        "hostname 
+        hostname -i 
+        pwd"
+        #"ansible-pull -U https://github.com/RajeshVR999/ansible.git -e ansible_user=ec2-user -e ansible_password=Devops@999 -e COMPONENT=mongodb roboshop.yml"
      ]
   }
   tags = {

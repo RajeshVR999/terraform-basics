@@ -12,7 +12,7 @@ resource "aws_instance" "app" {
 
 variable "sg" {
   description = "Security group ID for the EC2 instance"
-  type        = string
+  type        = "string"
 }
 
 output "public_ip" {

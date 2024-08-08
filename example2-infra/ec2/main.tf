@@ -8,10 +8,7 @@ resource "aws_instance" "app" {
   }
 }
 
-# Show private ip outputs on the sscreen 
-output "private_dns" {
-  value = aws_instance.app.private_ip
-}
+
 
 #variable "sg" {}
 

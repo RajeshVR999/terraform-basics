@@ -13,7 +13,7 @@ output "private_dns" {
   value = aws_instance.app.private_ip
 }
 
-variable "sg" {}
+#variable "sg" {}
 
 output "public_ip" {
   value = module.ec2.public_ip

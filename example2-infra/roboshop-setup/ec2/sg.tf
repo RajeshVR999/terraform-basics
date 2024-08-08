@@ -1,10 +1,10 @@
 # Creating secuirty group 
 resource "aws_security_group" "allows_ssh" {
-  name        = "allows_ssh"
-  description = "Allow TLS inbound traffic"
+  name        = "allows_ssh_${var.COMPONENT}"
+  description = "Allow SSH inbound traffic"
 
   ingress {
-    description = "TLS from VPC"
+    description = "SSH from VPC"
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
@@ -26,6 +26,14 @@ resource "aws_security_group" "allows_ssh" {
       protocol         = "tcp"
       cidr_blocks      = ["0.0.0.0/0"]
     }
+    
+     ingress {
+      description      = "APP From Public"
+      from_port        = 8080
+      to_port          = 8080
+      protocol         = "tcp"
+      cidr_blocks      = ["0.0.0.0/0"]
+    }
 
   egress {
     from_port     = 0
@@ -35,7 +43,7 @@ resource "aws_security_group" "allows_ssh" {
   }
 
   tags = {
-    Name = "allows_SSH"
+    Name = "allows_SSH_${var.COMPONENT}"
   }
 }
 

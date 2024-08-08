@@ -12,7 +12,9 @@ resource "aws_instance" "app" {
   }
 
   provisioner "remote-exec" {
-    
+    inline = [ 
+        "ansible-pull -U https://github.com/RajeshVR999/ansible.git -e COMPONENT=mongodb roboshop.yml"
+     ]
   }
   tags = {
     Name = "CAE-CERT-AWS_EC2"

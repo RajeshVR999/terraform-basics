@@ -10,10 +10,7 @@ resource "aws_instance" "app" {
 
 
 
-variable "sg" {
-  description = "Security group ID for the EC2 instance"
-  type        = "string"
-}
+variable "sg" {}
 
 output "public_ip" {
   value = aws_instance.app.public_ip

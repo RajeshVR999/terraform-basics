@@ -1,6 +1,4 @@
-provider "aws" {
-  region = "ap-southeast-1"
-}
+
 
 # [default]
 # aws_access_key_id = YOUR_ACCESS_KEY_ID

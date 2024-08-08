@@ -5,3 +5,8 @@ terraform {
     region = "ap-southeast-1"  # Specify the correct region for your S3 bucket
   }
 }
+
+
+provider "aws" {
+  region = "ap-southeast-1"
+}

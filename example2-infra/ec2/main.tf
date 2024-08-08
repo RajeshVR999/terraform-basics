@@ -13,5 +13,5 @@ resource "aws_instance" "app" {
 #variable "sg" {}
 
 output "public_ip" {
-  value = module.ec2.public_ip
+  value = aws_instance.app.public_ip
   }
